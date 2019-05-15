@@ -8,19 +8,25 @@
   <meta name="description" content="Trivia Game">
   <meta name="author" content="Herbert Campos">
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    
-<h1>Trivia Game</h1>
-<button id="start">Click here to start</button>
-<div id="time"></div>
-<div id="current-question"></div>
-<div id="current-choices"></div>
-<div id="message"></div>
-<div id="right"></div>
-<div id="wrong"></div>
+  <div class="jumbotron jumbotron-fluid">
+    <h1 class="text-center">Trivia Game</h1>
+  </div>
+<section class="row">
+  <button id="start" type="button" class="btn btn-info center">Click here to start</button>
+</section>
+<div id="time" class="text-center"></div>
+<div id="current-question" class="text-center"></div>
+<section class="row">
+  <div id="current-choices" class="center"></div>
+</section>
+<div id="message" class="text-center"></div>
+<div id="right" class="text-center"></div>
+<div id="wrong" class="text-center"></div>
 
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

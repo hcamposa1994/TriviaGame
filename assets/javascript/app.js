@@ -1,4 +1,3 @@
-var score = 0;
 var questions = [
     {
         question : "In the year 1900 in the U.S. what were the most popular first names given to boy and girl babies?",
@@ -34,7 +33,7 @@ function generateTriviaGame() {
             var allChoices = questions[TriviaGame.current].choices;
 
             for (var i = 0; i < allChoices.length; i++) {
-                var seperateChoice = $("<button>");
+                var seperateChoice = $("<button type='button' class='btn btn-info'>");
                 seperateChoice.html(allChoices[i]);
                 seperateChoice.attr("value", i);
                 $("#current-choices").append(seperateChoice);
